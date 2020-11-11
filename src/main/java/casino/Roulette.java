@@ -23,7 +23,7 @@ public final class Roulette {
         if (!playing) {
             playing = true;
             ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
-            executor.scheduleAtFixedRate(startSpinning, 0, 10, TimeUnit.SECONDS);
+            executor.scheduleAtFixedRate(startSpinning, 0, 30, TimeUnit.SECONDS);
         }
     }
 
